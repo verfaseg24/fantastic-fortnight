@@ -15,7 +15,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: recursive # Обязательно выкачиваем все сабмодули
+          submodules: recursive
+
+      - name: Fetch missing submodules (Fallback for ZIP uploads)
+        run: |
+          if [ -z "$(ls -A httpsupgrade/httpsupgrade-impl/src/main/cpp/bloom_cpp 2>/dev/null)" ] || [ ! -d "httpsupgrade/httpsupgrade-impl/src/main/cpp/bloom_cpp" ]; then
+            rm -rf httpsupgrade/httpsupgrade-impl/src/main/cpp/bloom_cpp
+            git clone https://github.com/duckduckgo/bloom_cpp.git httpsupgrade/httpsupgrade-impl/src/main/cpp/bloom_cpp
+          fi
+          if [ -z "$(ls -A submodules/privacy-grade 2>/dev/null)" ] || [ ! -d "submodules/privacy-grade" ]; then
+            rm -rf submodules/privacy-grade
+            git clone https://github.com/duckduckgo/privacy-grade.git submodules/privacy-grade
+          fi
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
