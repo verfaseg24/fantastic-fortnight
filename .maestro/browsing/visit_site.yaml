@@ -1,0 +1,27 @@
+appId: com.duckduckgo.mobile.android
+name: "ReleaseTest: General website browsing works"
+tags:
+  - releaseTest
+---
+- retry:
+    maxRetries: 3
+    commands:
+      - launchApp:
+          clearState: true
+          stopApp: true
+
+      - runFlow: ../shared/skip_all_onboarding.yaml
+
+      - assertVisible:
+          text: "Search"
+      - tapOn:
+          id: "omnibarTextInput"
+      - inputText: "https://privacy-test-pages.site"
+      - pressKey: Enter
+      - assertVisible:
+          text: ".*Privacy Test Pages.*"
+      - tapOn:
+          id: "omnibarTextInput"
+      - eraseText
+      - assertVisible:
+          text: "Search"

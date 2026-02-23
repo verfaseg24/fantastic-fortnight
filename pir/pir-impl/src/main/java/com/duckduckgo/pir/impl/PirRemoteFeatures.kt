@@ -1,0 +1,69 @@
+/*
+ * Copyright (c) 2025 DuckDuckGo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.duckduckgo.pir.impl
+
+import com.duckduckgo.anvil.annotations.ContributesRemoteFeature
+import com.duckduckgo.common.utils.DispatcherProvider
+import com.duckduckgo.di.scopes.AppScope
+import com.duckduckgo.feature.toggles.api.Toggle
+import com.duckduckgo.feature.toggles.api.Toggle.DefaultFeatureValue
+import com.duckduckgo.feature.toggles.api.Toggle.DefaultValue
+import com.duckduckgo.pir.api.PirFeature
+import com.duckduckgo.pir.api.dashboard.PirFeatureState
+import com.duckduckgo.pir.impl.store.PirRepository
+import com.squareup.anvil.annotations.ContributesBinding
+import dagger.SingleInstanceIn
+import kotlinx.coroutines.withContext
+import javax.inject.Inject
+
+@ContributesRemoteFeature(
+    scope = AppScope::class,
+    featureName = "pir",
+)
+interface PirRemoteFeatures {
+    @Toggle.DefaultValue(DefaultFeatureValue.TRUE)
+    fun self(): Toggle
+
+    @DefaultValue(DefaultFeatureValue.INTERNAL)
+    fun pirBeta(): Toggle
+}
+
+@SingleInstanceIn(AppScope::class)
+@ContributesBinding(
+    scope = AppScope::class,
+    boundType = PirFeature::class,
+)
+class PirRemoteFeatureImpl @Inject constructor(
+    private val pirRemoteFeatures: PirRemoteFeatures,
+    private val dispatcherProvider: DispatcherProvider,
+    private val pirRepository: PirRepository,
+) : PirFeature {
+
+    override suspend fun getPirFeatureState(): PirFeatureState = withContext(dispatcherProvider.io()) {
+        val isEnabled = pirRemoteFeatures.pirBeta().isEnabled()
+        if (!isEnabled) {
+            return@withContext PirFeatureState.DISABLED
+        }
+
+        val isRepositoryAvailable = pirRepository.isRepositoryAvailable()
+        if (!isRepositoryAvailable) {
+            return@withContext PirFeatureState.NOT_AVAILABLE
+        }
+
+        return@withContext PirFeatureState.ENABLED
+    }
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2025 DuckDuckGo
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="duck_chat_title">Duck.ai</string>
+    <string name="duck_chat_download_finished_action_name">Öppna</string>
+    <string name="duck_chat_cannot_open_file_error_message">Det går inte att öppna filen. Sök efter en kompatibel app.</string>
+
+    <!-- Uploading an image from the camera or choosing to use existing image -->
+    <string name="imageCaptureCameraUnavailable">Det gick inte att komma åt kameran</string>
+    <string name="imageCaptureCameraGalleryDisambiguationTitle">Ladda upp en bild</string>
+    <string name="imageCaptureCameraGalleryDisambiguationGalleryOption">Välj fil</string>
+    <string name="imageCaptureCameraGalleryDisambiguationCameraOption">Ta foto</string>
+    <string name="imageCaptureCameraPermissionDeniedTitle">Tillåt DuckDuckGo att be om kameraåtkomst på den här enheten</string>
+    <string name="imageCaptureCameraPermissionDeniedMessage">Webbplatser kan endast använda din kamera om du tillåter DuckDuckGo att be om åtkomst.</string>
+    <string name="imageCaptureCameraPermissionDeniedPositiveButton">Öppna inställningar</string>
+    <string name="imageCaptureCameraPermissionDeniedNegativeButton">Avbryt</string>
+
+    <!-- Content capture for upload -->
+    <string name="audioCaptureSoundRecorderUnavailable">Det gick inte att komma åt ljudinspelaren</string>
+    <string name="audioCaptureSoundRecorderPermissionDeniedTitle">Tillåt DuckDuckGo att be om åtkomst till ljudinspelaren på den här enheten</string>
+    <string name="audioCaptureSoundRecorderPermissionDeniedMessage">Webbplatser kan endast använda ljudinspelaren om du tillåter DuckDuckGo att be om åtkomst.</string>
+
+    <!-- Settings -->
+    <string name="duck_chat_ai_features_title">AI-funktioner</string>
+    <string name="duck_chat_settings_activity_description">DuckDuckGos AI-funktioner är privata och valfria.\nDina data används inte för att träna AI.\n<annotation type="learn_more_link">Läs mer</annotation></string>
+    <string name="duck_chat_enable_duck_ai_setting">Duck.ai</string>
+    <string name="duck_chat_enable_duck_ai_setting_description">Chatta privat med populära AI-modeller från tredje part</string>
+    <string name="duck_chat_visibility_setting">Webbläsarmeny</string>
+    <string name="duck_chat_address_bar_visibility_setting">Adressfält</string>
+    <string name="duck_chat_assist_settings_title">Inställningar för Search Assist</string>
+    <string name="duck_chat_assist_settings_description">Välj hur ofta du vill att AI-assisterade svar ska visas i dina sökningar</string>
+    <string name="duck_ai_shortcut_settings_title">Duck.ai-genvägar</string>
+    <string name="duck_ai_shortcut_settings_description">Välj vilka Duck.ai-genvägar du vill visa</string>
+
+    <!-- Duck AI Voice Search Shortcut Setting -->
+    <string name="duckAiVoiceSearchVisibilitySetting">Röstsökning</string>
+
+    <!-- Input Screen  -->
+    <string name="input_screen_search_hint">Sök eller ange adress</string>
+    <string name="input_screen_chat_hint">Fråga privat</string>
+    <string name="input_screen_user_pref_without_ai">Sök endast</string>
+    <string name="input_screen_user_pref_with_ai">Sök &amp; Duck.ai</string>
+    <string name="input_screen_user_pref_description">Prova den nya funktionen att fråga Duck.ai direkt från adressfältet. <annotation type="share_feedback">Berätta vad du tycker</annotation></string>
+
+    <!-- Duck.ai Pro settings -->
+    <string name="duck_ai_paid_settings_title">Duck.ai</string>
+    <string name="duck_ai_paid_settings_page_title">Duck.ai</string>
+    <string name="duck_ai_paid_settings_page_description"><![CDATA[Chatta privat med AI-modeller för prenumeranter.\n<a href=\"\">Läs mer</a>]]></string>
+    <string name="duck_ai_paid_settings_open_duck_ai">Öppna Duck.ai</string>
+    <string name="duck_ai_paid_settings_learn_more_title">Läs mer</string>
+
+    <!-- AutoComplete -->
+    <string name="autocompleteDuckAiPrompt">Fråga Duck.ai</string>
+    <string name="autocompleteDeviceAppNotFound">Appen kunde inte hittas</string>
+
+    <!-- New Address Bar Option Bottom Sheet Dialog -->
+    <string name="newAddressBarOptionBottomSheetDialogTitle">Vill du ha enklare åtkomst\ntill privat AI-chatt?</string>
+    <string name="newAddressBarOptionBottomSheetDialogSearchText">Sök eller ange adress</string>
+    <string name="newAddressBarOptionBottomSheetDialogPrimaryButton">Bekräfta</string>
+    <string name="newAddressBarOptionBottomSheetDialogGhostButton">Inte nu</string>
+    <string name="newAddressBarOptionBottomSheetDialogFooter">Justera i Inställningar &gt; AI-funktioner.</string>
+    <string name="newAddressBarOptionBottomSheetDialogSearchOnly">Sök endast</string>
+    <string name="newAddressBarOptionBottomSheetDialogSearchAndDuckAi">Sök &amp; Duck.ai</string>
+    <string name="newAddressBarOptionBottomSheetDialogHeader">Alternativ för adressfält</string>
+
+    <!-- Duck AI SERP Settings Title -->
+    <string name="duckAiSerpSettingsTitle">AI-funktioner</string>
+
+    <!-- Duck AI Search Section Header -->
+    <string name="duckAiSearchSettingsSectionHeader">Sökning</string>
+
+    <!-- Duck AI Hide Generated Images Settings Option -->
+    <string name="duckAiHideAiGeneratedImagesTitle">Dölj AI-genererade bilder</string>
+    <string name="duckAiHideAiGeneratedImagesDescription">Filtrerar bort AI-genererade bilder från bildsökningsresultaten</string>
+
+    <!-- Duck AI Paid Settings -->
+    <string name="duck_ai_paid_settings_enable_in_settings">Aktivera i inställningarna för AI-funktioner</string>
+    <string name="duck_ai_paid_settings_manage_in_settings">Hantera i inställningarna för AI-funktioner</string>
+    <string name="duck_ai_paid_settings_manage_secondary">Konfigurera Duck.ai i inställningarna för AI-funktioner.</string>
+
+    <!-- Duck AI contextual onboarding -->
+    <string name="duck_chat_contextual_onboarding_title" instruction="Title for contextual Duck AI onboarding sheet">Fråga om den här sidan</string>
+    <string name="duck_chat_contextual_onboarding_body" instruction="Body text for contextual Duck AI onboarding sheet">Duck.ai kan nu hjälpa till att svara på frågor om sidan du tittar på.\n\nSidinnehåll inkluderas bara när du bifogar det. Du kan när som helst ändra detta i Inställningar.</string>
+    <string name="duck_chat_contextual_onboarding_primary" instruction="Button to continue to contextual Duck AI sheet">Jag fattar</string>
+    <string name="duck_chat_contextual_onboarding_secondary" instruction="Button to go to AI settings">Visa inställningar</string>
+
+    <!-- Duck.ai Contextual Bottom Sheet -->
+    <string name="duckAIContextualPromptSummarize">Sammanfatta denna sida</string>
+    <string name="duckAIContextualAutomaticContextTitle">Skicka sidinnehåll automatiskt</string>
+    <string name="duckAIContextualAutomaticContextMessage">Skicka sidinnehåll automatiskt till Duck.ai</string>
+    <string name="duckAIContextualAttachPageContent">Bifoga sidans innehåll</string>
+</resources>

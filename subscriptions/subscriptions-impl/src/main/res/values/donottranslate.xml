@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2025 DuckDuckGo
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <!-- Personal Information Removal -->
+    <string name="pirStorageUnavailableDialogTitle">Temporary issue with Personal Information Removal</string>
+    <string name="pirStorageUnavailableDialogMessage">Please restart the DuckDuckGo app and try again.</string>
+    <string name="pirStorageUnavailableDialogButton">Got It</string>
+
+    <!-- Black Friday offer-->
+    <string name="subscriptionSettingBlackFridayOffer">Save 40% on First Year</string>
+
+    <!-- Pro tier changes -->
+    <string name="feedbackSubCategorySubsUnableToAccessProFeatures">Unable to access Plus or Pro tier features</string>
+    <string name="subscriptionsProUpgradeTitle">Upgrade to Pro</string>
+    <string name="subscriptionsProUpgradeMessage">Unlock more powerful AI</string>
+    <string name="subscriptionSettingSectionManageSubscription">Manage Subscription</string>
+    <string name="subscriptionSettingViewAllPlans">View All Plans</string>
+    <string name="subscriptionSettingManagePaymentOrCancel">Manage Payment or Cancel</string>
+
+    <!-- Pending plan changes -->
+    <string name="subscriptionPendingPlanChangeUpgrade" instruction="First placeholder is the plan name (e.g. Plus Yearly), third is a date">Your plan will upgrade to %1$s on %2$s.</string>
+    <string name="subscriptionPendingPlanChangeDowngrade" instruction="First placeholder is the plan name (e.g. Plus Yearly), third is a date">Your plan will downgrade to %1$s on %2$s.</string>
+    <string name="planNamePlusMonthly">Plus Monthly</string>
+    <string name="planNamePlusYearly">Plus Yearly</string>
+    <string name="planNameProMonthly">Pro Monthly</string>
+    <string name="planNameProYearly">Pro Yearly</string>
+    <string name="tierPlusName" translatable="false">PLUS</string>
+    <string name="tierProName" translatable="false">PRO</string>
+
+    <!-- VPN Reminder Notification -->
+    <string name="vpnReminderNotificationChannelName">VPN Reminders</string>
+    <string name="vpnReminderNotificationTitle">Don\'t forget to set up your VPN</string>
+    <string name="vpnReminderNotificationDescription">Block harmful sites and scams, hide your location, and shield your online activity now.</string>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2025 DuckDuckGo
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="duck_chat_title">Duck.ai</string>
+    <string name="duck_chat_download_finished_action_name">Apri</string>
+    <string name="duck_chat_cannot_open_file_error_message">Impossibile aprire il file. Verifica la disponibilità di un\'app compatibile.</string>
+
+    <!-- Uploading an image from the camera or choosing to use existing image -->
+    <string name="imageCaptureCameraUnavailable">Impossibile accedere alla fotocamera</string>
+    <string name="imageCaptureCameraGalleryDisambiguationTitle">Carica un\'immagine</string>
+    <string name="imageCaptureCameraGalleryDisambiguationGalleryOption">Scegli un file</string>
+    <string name="imageCaptureCameraGalleryDisambiguationCameraOption">Scatta una foto</string>
+    <string name="imageCaptureCameraPermissionDeniedTitle">Consenti a DuckDuckGo di richiedere l\'accesso alla fotocamera su questo dispositivo</string>
+    <string name="imageCaptureCameraPermissionDeniedMessage">I siti possono utilizzare la fotocamera solo se consenti a DuckDuckGo di richiederne l\'accesso.</string>
+    <string name="imageCaptureCameraPermissionDeniedPositiveButton">Apri Impostazioni</string>
+    <string name="imageCaptureCameraPermissionDeniedNegativeButton">Annulla</string>
+
+    <!-- Content capture for upload -->
+    <string name="audioCaptureSoundRecorderUnavailable">Impossibile accedere al registratore audio</string>
+    <string name="audioCaptureSoundRecorderPermissionDeniedTitle">Consenti a DuckDuckGo di richiedere l\'accesso al registratore audio su questo dispositivo</string>
+    <string name="audioCaptureSoundRecorderPermissionDeniedMessage">I siti possono utilizzare il registratore audio solo se consenti a DuckDuckGo di richiederne l\'accesso.</string>
+
+    <!-- Settings -->
+    <string name="duck_chat_ai_features_title">Funzionalità IA</string>
+    <string name="duck_chat_settings_activity_description">Le funzionalità AI di DuckDuckGo sono private e opzionali.I tuoi dati non vengono usati per addestrare l\'IA.\n<annotation type="learn_more_link">Scopri di più</annotation></string>
+    <string name="duck_chat_enable_duck_ai_setting">Duck.ai</string>
+    <string name="duck_chat_enable_duck_ai_setting_description">Chatta privatamente con i più diffusi modelli di AI di terze parti</string>
+    <string name="duck_chat_visibility_setting">Menu del browser</string>
+    <string name="duck_chat_address_bar_visibility_setting">Barra degli indirizzi</string>
+    <string name="duck_chat_assist_settings_title">Impostazioni di Search Assist</string>
+    <string name="duck_chat_assist_settings_description">Scegli la frequenza con cui vuoi che le risposte assistite dall\'intelligenza artificiale appaiano nelle tue ricerche</string>
+    <string name="duck_ai_shortcut_settings_title">Scorciatoie Duck.ai</string>
+    <string name="duck_ai_shortcut_settings_description">Scegli quali scorciatoie di Duck.ai visualizzare</string>
+
+    <!-- Duck AI Voice Search Shortcut Setting -->
+    <string name="duckAiVoiceSearchVisibilitySetting">Ricerca vocale</string>
+
+    <!-- Input Screen  -->
+    <string name="input_screen_search_hint">Cerca o digita l\'indirizzo</string>
+    <string name="input_screen_chat_hint">Chiedi in privato</string>
+    <string name="input_screen_user_pref_without_ai">Solo ricerca</string>
+    <string name="input_screen_user_pref_with_ai">Ricerca e Duck.ai</string>
+    <string name="input_screen_user_pref_description">Prova la nuova opzione per chiedere a Duck.ai direttamente dalla barra degli indirizzi. <annotation type="share_feedback">Condividi feedback</annotation></string>
+
+    <!-- Duck.ai Pro settings -->
+    <string name="duck_ai_paid_settings_title">Duck.ai</string>
+    <string name="duck_ai_paid_settings_page_title">Duck.ai</string>
+    <string name="duck_ai_paid_settings_page_description"><![CDATA[Chatta privatamente con modelli AI esclusivi per abbonati.\n<a href=\"\">Ulteriori informazioni</a>]]></string>
+    <string name="duck_ai_paid_settings_open_duck_ai">Apri Duck.ai</string>
+    <string name="duck_ai_paid_settings_learn_more_title">Ulteriori informazioni</string>
+
+    <!-- AutoComplete -->
+    <string name="autocompleteDuckAiPrompt">Chiedi a Duck.ai</string>
+    <string name="autocompleteDeviceAppNotFound">Impossibile trovare l\'applicazione</string>
+
+    <!-- New Address Bar Option Bottom Sheet Dialog -->
+    <string name="newAddressBarOptionBottomSheetDialogTitle">Vuoi un accesso più semplice\nall\'AI chat privata?</string>
+    <string name="newAddressBarOptionBottomSheetDialogSearchText">Cerca o digita l\'indirizzo</string>
+    <string name="newAddressBarOptionBottomSheetDialogPrimaryButton">Conferma</string>
+    <string name="newAddressBarOptionBottomSheetDialogGhostButton">Non adesso</string>
+    <string name="newAddressBarOptionBottomSheetDialogFooter">Regola in Impostazioni &gt; Funzionalità AI.</string>
+    <string name="newAddressBarOptionBottomSheetDialogSearchOnly">Solo ricerca</string>
+    <string name="newAddressBarOptionBottomSheetDialogSearchAndDuckAi">Ricerca e Duck.ai</string>
+    <string name="newAddressBarOptionBottomSheetDialogHeader">Opzione Barra degli indirizzi</string>
+
+    <!-- Duck AI SERP Settings Title -->
+    <string name="duckAiSerpSettingsTitle">Funzionalità IA</string>
+
+    <!-- Duck AI Search Section Header -->
+    <string name="duckAiSearchSettingsSectionHeader">Ricerca</string>
+
+    <!-- Duck AI Hide Generated Images Settings Option -->
+    <string name="duckAiHideAiGeneratedImagesTitle">Nascondi le immagini generate dall\'IA</string>
+    <string name="duckAiHideAiGeneratedImagesDescription">Filtra le immagini generate dall\'intelligenza artificiale dai risultati di ricerca delle immagini</string>
+
+    <!-- Duck AI Paid Settings -->
+    <string name="duck_ai_paid_settings_enable_in_settings">Abilita nelle impostazioni delle funzionalità AI</string>
+    <string name="duck_ai_paid_settings_manage_in_settings">Gestisci nelle impostazioni delle funzionalità AI</string>
+    <string name="duck_ai_paid_settings_manage_secondary">Configura Duck.ai nelle impostazioni delle funzionalità AI.</string>
+
+    <!-- Duck AI contextual onboarding -->
+    <string name="duck_chat_contextual_onboarding_title" instruction="Title for contextual Duck AI onboarding sheet">Chiedi informazioni su questa pagina</string>
+    <string name="duck_chat_contextual_onboarding_body" instruction="Body text for contextual Duck AI onboarding sheet">Da oggi, Duck.ai può aiutarti a rispondere alle domande sulla pagina che stai visualizzando.\n\nLe informazioni contenute nella pagina vengono incluse solo quando vengono allegate. Puoi modificare questa opzione in qualsiasi momento in Impostazioni.</string>
+    <string name="duck_chat_contextual_onboarding_primary" instruction="Button to continue to contextual Duck AI sheet">Ho capito</string>
+    <string name="duck_chat_contextual_onboarding_secondary" instruction="Button to go to AI settings">Visualizza le impostazioni</string>
+
+    <!-- Duck.ai Contextual Bottom Sheet -->
+    <string name="duckAIContextualPromptSummarize">Riassumi questa pagina</string>
+    <string name="duckAIContextualAutomaticContextTitle">Invia automaticamente il contenuto della pagina</string>
+    <string name="duckAIContextualAutomaticContextMessage">Invia automaticamente il contenuto della pagina a Duck.ai</string>
+    <string name="duckAIContextualAttachPageContent">Allega il contenuto della pagina</string>
+</resources>

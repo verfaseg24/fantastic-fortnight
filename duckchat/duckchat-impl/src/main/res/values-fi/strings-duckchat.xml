@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2025 DuckDuckGo
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<!-- smartling.entity_escaping = false -->
+<!-- smartling.instruction_attributes = instruction -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="duck_chat_title">Duck.ai</string>
+    <string name="duck_chat_download_finished_action_name">Avaa</string>
+    <string name="duck_chat_cannot_open_file_error_message">Tiedoston avaaminen ei onnistu. Tarkista yhteensopiva sovellus.</string>
+
+    <!-- Uploading an image from the camera or choosing to use existing image -->
+    <string name="imageCaptureCameraUnavailable">Kameraa ei voitu käyttää</string>
+    <string name="imageCaptureCameraGalleryDisambiguationTitle">Lataa kuva</string>
+    <string name="imageCaptureCameraGalleryDisambiguationGalleryOption">Valitse tiedosto</string>
+    <string name="imageCaptureCameraGalleryDisambiguationCameraOption">Ota valokuva</string>
+    <string name="imageCaptureCameraPermissionDeniedTitle">Salli DuckDuckGon pyytää kameran käyttöoikeutta tällä laitteella</string>
+    <string name="imageCaptureCameraPermissionDeniedMessage">Sivustot voivat käyttää kameraa vain, jos sallit DuckDuckGon pyytää sen käyttöoikeutta.</string>
+    <string name="imageCaptureCameraPermissionDeniedPositiveButton">Avaa asetukset</string>
+    <string name="imageCaptureCameraPermissionDeniedNegativeButton">Peruuta</string>
+
+    <!-- Content capture for upload -->
+    <string name="audioCaptureSoundRecorderUnavailable">Äänentallenninta ei voitu käyttää</string>
+    <string name="audioCaptureSoundRecorderPermissionDeniedTitle">Salli DuckDuckGon pyytää äänitallentimen käyttöoikeutta tällä laitteella</string>
+    <string name="audioCaptureSoundRecorderPermissionDeniedMessage">Sivustot voivat käyttää äänitallenninta vain, jos sallit DuckDuckGon pyytää sen käyttöoikeutta.</string>
+
+    <!-- Settings -->
+    <string name="duck_chat_ai_features_title">Tekoälyominaisuudet</string>
+    <string name="duck_chat_settings_activity_description">DuckDuckGon tekoälyominaisuudet ovat yksityisiä ja valinnaisia.\nTietojasi ei käytetä tekoälyn kouluttamiseen.\n<annotation type="learn_more_link">Lue lisää</annotation></string>
+    <string name="duck_chat_enable_duck_ai_setting">Duck.ai</string>
+    <string name="duck_chat_enable_duck_ai_setting_description">Keskustele yksityisesti suosittujen kolmannen osapuolen tekoälymallien kanssa</string>
+    <string name="duck_chat_visibility_setting">Selainvalikko</string>
+    <string name="duck_chat_address_bar_visibility_setting">Osoitekenttä</string>
+    <string name="duck_chat_assist_settings_title">Search Assist -asetukset</string>
+    <string name="duck_chat_assist_settings_description">Valitse, kuinka usein haluat tekoälyavusteisten vastausten näkyvän hauissasi</string>
+    <string name="duck_ai_shortcut_settings_title">Duck.ai-pikakuvakkeet</string>
+    <string name="duck_ai_shortcut_settings_description">Valitse, mitkä Duck.ai-pikakuvakkeet näytetään</string>
+
+    <!-- Duck AI Voice Search Shortcut Setting -->
+    <string name="duckAiVoiceSearchVisibilitySetting">Äänihaku</string>
+
+    <!-- Input Screen  -->
+    <string name="input_screen_search_hint">Hae tai anna osoite</string>
+    <string name="input_screen_chat_hint">Kysy yksityisesti</string>
+    <string name="input_screen_user_pref_without_ai">Vain haku</string>
+    <string name="input_screen_user_pref_with_ai">Haku ja Duck.ai</string>
+    <string name="input_screen_user_pref_description">Kokeile uutta vaihtoehtoa kysyä Duck.ai:lta suoraan osoiteriviltä. <annotation type="share_feedback">Anna palautetta</annotation></string>
+
+    <!-- Duck.ai Pro settings -->
+    <string name="duck_ai_paid_settings_title">Duck.ai</string>
+    <string name="duck_ai_paid_settings_page_title">Duck.ai</string>
+    <string name="duck_ai_paid_settings_page_description"><![CDATA[Keskustele yksityisesti tilaajien käytettävissä olevien tekoälymallien kanssa.\n<a href=\"\">Lue lisää</a>]]></string>
+    <string name="duck_ai_paid_settings_open_duck_ai">Avaa Duck.ai</string>
+    <string name="duck_ai_paid_settings_learn_more_title">Lue lisää</string>
+
+    <!-- AutoComplete -->
+    <string name="autocompleteDuckAiPrompt">Kysy Duck.ai:lta</string>
+    <string name="autocompleteDeviceAppNotFound">Sovellusta ei löytynyt</string>
+
+    <!-- New Address Bar Option Bottom Sheet Dialog -->
+    <string name="newAddressBarOptionBottomSheetDialogTitle">Haluatko helpomman pääsyn\nyksityiseen tekoäly-chatiin?</string>
+    <string name="newAddressBarOptionBottomSheetDialogSearchText">Hae tai anna osoite</string>
+    <string name="newAddressBarOptionBottomSheetDialogPrimaryButton">Vahvista</string>
+    <string name="newAddressBarOptionBottomSheetDialogGhostButton">Ei nyt</string>
+    <string name="newAddressBarOptionBottomSheetDialogFooter">Säädä kohdassa Asetukset &gt; Tekoälyominaisuudet.</string>
+    <string name="newAddressBarOptionBottomSheetDialogSearchOnly">Vain haku</string>
+    <string name="newAddressBarOptionBottomSheetDialogSearchAndDuckAi">Haku ja Duck.ai</string>
+    <string name="newAddressBarOptionBottomSheetDialogHeader">Osoiterivi-vaihtoehto</string>
+
+    <!-- Duck AI SERP Settings Title -->
+    <string name="duckAiSerpSettingsTitle">Tekoälyominaisuudet</string>
+
+    <!-- Duck AI Search Section Header -->
+    <string name="duckAiSearchSettingsSectionHeader">Hae</string>
+
+    <!-- Duck AI Hide Generated Images Settings Option -->
+    <string name="duckAiHideAiGeneratedImagesTitle">Piilota tekoälyn luomat kuvat</string>
+    <string name="duckAiHideAiGeneratedImagesDescription">Suodattaa pois tekoälyn luomat kuvat kuvahaun tuloksista</string>
+
+    <!-- Duck AI Paid Settings -->
+    <string name="duck_ai_paid_settings_enable_in_settings">Ota käyttöön tekoälyominaisuuksien asetuksissa</string>
+    <string name="duck_ai_paid_settings_manage_in_settings">Hallinnoi tekoälyominaisuuksien asetuksissa</string>
+    <string name="duck_ai_paid_settings_manage_secondary">Määritä Duck.ai tekoälyominaisuuksien asetuksissa.</string>
+
+    <!-- Duck AI contextual onboarding -->
+    <string name="duck_chat_contextual_onboarding_title" instruction="Title for contextual Duck AI onboarding sheet">Kysy tästä sivusta</string>
+    <string name="duck_chat_contextual_onboarding_body" instruction="Body text for contextual Duck AI onboarding sheet">Duck.ai voi nyt auttaa vastaamaan katselemaasi sivuun liittyviin kysymyksiin.\n\nSivun sisältö sisällytetään vain, kun liität sen. Voit muuttaa tätä milloin tahansa asetuksista.</string>
+    <string name="duck_chat_contextual_onboarding_primary" instruction="Button to continue to contextual Duck AI sheet">Selvä</string>
+    <string name="duck_chat_contextual_onboarding_secondary" instruction="Button to go to AI settings">Näytä asetukset</string>
+
+    <!-- Duck.ai Contextual Bottom Sheet -->
+    <string name="duckAIContextualPromptSummarize">Yhteenveto tästä sivusta</string>
+    <string name="duckAIContextualAutomaticContextTitle">Lähetä sivun sisältö automaattisesti</string>
+    <string name="duckAIContextualAutomaticContextMessage">Lähetä sivun sisältö automaattisesti Duck.ai:lle</string>
+    <string name="duckAIContextualAttachPageContent">Liitä sivun sisältö</string>
+</resources>
