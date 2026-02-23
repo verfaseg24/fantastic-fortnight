@@ -28,6 +28,17 @@ jobs:
         with:
           go-version: '1.18.3'
 
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-linux-android,armv7-linux-androideabi,i686-linux-android,x86_64-linux-android
+
+      - name: Set up NDK
+        uses: nttld/setup-ndk@v1
+        id: setup-ndk
+        with:
+          ndk-version: r21e
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
